@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"> <!-- este exemplo não está igual ao do coded academy pois tabalhou-se em 2 modelos diferentes. o guess a number e o login (mais um exemplo de pedir um CC), pelo que juntei os 3 no mesmo e apliquei algumas coisas que aprendi anteriormente como o <h1> e o <br> para deixar a pagina mais "bonita" ahah-->
+  <head>
+    <meta charset="utf-8">
+    <title>Number Guessing</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Spicy+Rice" rel="stylesheet">
+  </head>
+  <body>
+    <section class="overlay">
+      <h1>Guess the right number!</h1>
+        <form action="check.html" method="GET">
+          <label for="guess">Enter a number between 1-10:</label>
+          <br>
+          <input type="number" name="guess" id="guess" min="1" max="10" required> <!-- o parametro required obriga a que o campo seja preenchido antes que o utlizador faça a submissão do formulário, impedindo a submissão sem o preenchimento do campo, os parametros min e max forçam a que o valor numerico inserido seja maior ou igual , ou menor ou igual, respetivo ao valores definidos em min e max -->
+          <br>
+          <input type="submit" id="submission" value="Submit">
+          <br>
+        </form>
+		<br>
+		<h1>Login here:</h1>
+		<br>
+        <form action="submission.html" method="GET">
+          <label for="username">Username:</label>
+		  <br>
+		  <input id="username" name="username" type="text" required minlength="3" maxlength="15" pattern="[a-zA-Z0-9]+"> <!-- o parametro pattern força a que os caracteres inseridos estejam dentro do range definido, neste caso entre a-z, A-Z e 0-9, não percebi o propósito do mais mas reparei que sem o mais não consgui submeter o formulario, e com o mais consigo-->
+		  <br>
+		  <label for="pw">Password:</label>
+		  <br>
+		  <input id="pw" name="pw" type="password" required minlength="8" maxlength="15"> <!-- minlength e maxlength forçam o campo a conter um numero de caracteres dentro do intervalos establecido-->
+		  <br>
+		  <input type="submit" value="Submit">	
+		  <br>
+		</form>
+		<br>
+		<h1>Add a payment method:</h1>
+		<br>
+		<form action="/example.html" method="POST">
+		  <label for="payment">Credit Card Number (no spaces):</label>
+		  <input id="payment" name="payment" type="text" required pattern="[0-9]{14,16}"> <!-- neste caso o pattern força a que input sejam numeros de 0-9 e que o campo contenha desde 14 a 16 numeros-->
+		  <input type="submit" value="Submit">
+		</form>
+	  </section>
+	</body>
+</html>
