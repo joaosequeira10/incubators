@@ -1,0 +1,72 @@
+/* este css foi feito por mim baseado apenas na secção "li" e alguma pesquisa na parte do scroll, ainda não cheguei a parte do css na formação mas quis experimentar */ 
+body {
+  background-image: url("bg.jpg");
+  margin: 0 3% 0 3%;
+}
+
+header {
+  background: rgba(100%, 100%, 100%, 0.50);
+  font-family: 'Oxygen', sans-serif;
+  text-indent: 10px;
+  font-size: 30px;
+}
+
+nav {
+  background: rgba(100%, 100%, 100%, 0.50);
+}
+main {
+  background: rgba(85%, 85%, 85%, 0.66);;
+}
+
+article {
+  font-family: 'Oxygen', sans-serif;
+  text-indent: 20px;
+  text-align: justify;
+}
+
+figcaption {
+  font-family: 'Oxygen', sans-serif;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  color: #000000;
+  display: inline-block;
+  font-family: 'Oxygen', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  margin: 0;
+  padding: 20px 18px 10px 18px;
+  text-transform: uppercase;
+}
+
+footer {
+  background: rgba(0%, 0%, 0%, 0.30);
+  font-family: 'Oxygen', sans-serif;
+}
+
+dinis {
+  font-family: 'Oxygen', sans-serif;
+  color: #ffffff;
+  background: #000000;
+}
+
+.active {
+  color: #88CCF1;
+}
+
+.scrollable {
+  align: center;
+  display: inline-block;
+  width: 90%;
+  height: 800px; 
+  overflow-y:hidden;
+  overflow-x: scroll;
+}
+
+

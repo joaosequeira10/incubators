@@ -1,0 +1,53 @@
+                     ____       _   _             _     _             _ 
+                    /_/\_\     | | (_)           | |   | |           | |
+ ___  ___ _ __ ___   __ _ _ __ | |_ _  ___ __ _  | |__ | |_ _ __ ___ | |
+/ __|/ _ \ '_ ` _ \ / _` | '_ \| __| |/ __/ _` | | '_ \| __| '_ ` _ \| |
+\__ \  __/ | | | | | (_| | | | | |_| | (_| (_| | | | | | |_| | | | | | |
+|___/\___|_| |_| |_|\__,_|_| |_|\__|_|\___\__,_| |_| |_|\__|_| |_| |_|_|
+                                                                        
+        (por questões de praticidade e compatibilidade este documento foi escrito num bloco de notas, pelo que peço desculpa por qualquer erro ortográfico não notado)
+                                                              
+	A semântica em html tem por objectivo simplificar o código e torná-lo mais facil de identificar, tandto para o utilizador, como para o motor de busca e para o browser,
+facilitando o surgimento do website em resultados de pesquisa assim com a ferramentas de acessibilidade como Screen Readers.
+	A semântica tambem ajuda a diminuir o tamanho do código pois dem vez de se utilizar um tag <div id="header"> pode-se utilizar apenas um tag <header>.
+	Graças a este modulo apercebi-me tambem que grande parte dos tags (senão todos) são lógicamente iguais ao tag <div>, mas com parametros pré-definidos sendo possivel até criar um tag com qualquer nome dentro,
+por exemplo <dinis>teste</dinis> criaria um paragrafo na página a dizer 'teste' (corrige-me se estiver errado).
+De acordo com a semântica os seguintes tags devem conter o sequente conteúdo:
+	- <header>: 	links de navegação (<nav>) e conteúdo introdutório / titulos (<h1>...<h6>)
+	- <nav>: 	deve estar dentro do header e conter links de navegação, por norma dentro do próprio website, e poderá estar organizado com uma lista <ul> e os links atribuidos com o tag <a>
+	- <a>: 		é utilizado para atribuir links sob a forma <a href="(./file.html || #id || protocolo://site.com/ || javascript: || mailto: || tel: || etc...)>exemplo</a> 
+			onde:
+				./ refere para uma pagina dentro do diretorio do website (tal como em unix);
+				# refere para uma tag com o respetivo id (no caso do exemplo podia referir <div id="id">;
+				protocolo:// refere um link absoluto, normalmente um website ou servidor externo por exemplo https://www.google.com ou ftp://ftp.download.com/download.ext;
+				javascript: executa um script em javascript por exemplo  <a href="#section2">Go to Section 2</a>;
+				mailto: ou tel: encaminham para um um compsitor de email com o destinatário referido ou para um dial telefónico com o numero referido já inserido;
+	- <main>: 	deve conter o conteúdo principal do website devendo conter especialmente tags como <article> e <header> para corpo de texto e titulos respetivamente;
+	- <article>: 	deve conter um sudtitulo <h1-6> e um ou mais paragrafos <p>, por exemplo:
+		<main>
+		  <header>
+		    <h1>Exemplo</h1>
+		  </header>
+		  <article>
+		    <h3>Exemplo</h3>
+		    <p>
+		      Lorem ipsum
+		    </p>
+		  </article> 
+		</main>
+	- <footer>: 	idêntico ao <header> mas colocado no final da página contendo links informativos acerca do conteúdo do website como o contacto, morada, direitos de autor, etc...
+	- <aside>:	deve conter informação adicional relativa a outro elemento, por exemplo bibliografia, notas, citações ou pequenos factos;
+	- <figure>:	deve ser utilizado para encapsular um tag <img> e complementado com <figcaption>: exemplo:
+		<figure>
+		  <a href="https://t3.ftcdn.net/jpg/00/92/53/56/240_F_92535664_IvFsQeHjBzfE6sD4VHdO8u5OHUSc6yHF.jpg">
+		    <img src="https://t3.ftcdn.net/jpg/00/92/53/56/240_F_92535664_IvFsQeHjBzfE6sD4VHdO8u5OHUSc6yHF.jpg">
+		  </a>
+		  <figcaption>Imagem de Exemplo</figcaption>
+		</figure>
+	- <audio>:	o tag audio deve ser usado quando se vai usar um tag <source> para incluir um ficheiro de som, pode conter mais argumentos como autoplay e controls: <audio autoplay controls>
+			que vão disponibilizar bontoes de reprodução do ficheiro de audio e reproduzilo automaticamente. Exemplo:
+			<audio autoplay controls>
+        	       	  <source src="https://content.codecademy.com/courses/SemanticHTML/dogBarking.mp3" type="audio/mp3">
+      			</audio>
+	- (por acabar -- ver website de exemplo)
+	
