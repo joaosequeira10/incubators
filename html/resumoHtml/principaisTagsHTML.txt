@@ -2,6 +2,7 @@
   <html> contem todo o código html
     <head> contem informação sobre a página, como o titulo, metadados e referencias a stylesheets, .js scripts e outros ficheiros
       <title> adiciona um titulo visivel no separador do browser apenas (ou barra de titulo) ao website
+	  <link> refere outro ficheiro normalmente que interaje com o html como um .css ou .js
       <a> ou Anchor é utilizado para criar links tanto internos como externos ao website, incluido referenciar ao paramartro id="" de outros tags
     <body> é onde se deve introduzir todo o conteudo visivel pelo utilizador como:
       <header> deve ser utilizado para criar a section de cabeçalho da pagina
