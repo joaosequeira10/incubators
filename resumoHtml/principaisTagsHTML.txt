@@ -1,0 +1,40 @@
+<!DOCTYPE html> - refere a versão do html, deve ser sempre a 1a linha
+  <html> contem todo o código html
+    <head> contem informação sobre a página, como o titulo, metadados e referencias a stylesheets, .js scripts e outros ficheiros
+      <title> adiciona um titulo visivel no separador do browser apenas (ou barra de titulo) ao website
+      <a> ou Anchor é utilizado para criar links tanto internos como externos ao website, incluido referenciar ao paramartro id="" de outros tags
+    <body> é onde se deve introduzir todo o conteudo visivel pelo utilizador como:
+      <header> deve ser utilizado para criar a section de cabeçalho da pagina
+        <nav> deve ser utilizado para criar a section de de links de navegação da pagina
+      <main> deve conter o conteudo principal da pagina, como :
+	  <article> que deve conter conteúdo informativo, por norma no forma de texto
+        <ul> cria uma lista não ordenada, onde cada item 
+		  <li> por definição começa com um tópico antes do texto
+        <ol> cria uma lista ordenada, tal como o ul mas com um numeor antes do texto em vez do topico
+      <aside> contem informação que complementa o <article> ou outro elemento que contenha informação, como uma bibliografica
+      <form> o form cria uma secção onde se espera o input do utilizador, o paramtero action="" refere para a pagina para onde o utilizador e encaminhado depois de submeter o form e o atributo method="" define como a informaçãoé envia ao servidor do website, dentro do form devem estar:
+	    <section> que une os elementos dela sobre a mesma class= e onde se devem encontrar:
+	      <label> que vai atribuir uma descrição a um <input id="x"> com o parametro for="x" 
+	      <input> que geram um campo que espera o input do utilizador, o <input> deve conter um parametro name="" e pode conter varios types=
+		   "text" cria um campo de uma linha para inserir texto;
+		   "password" tal como o "text" mas censurado;
+		   "number" tal como o text mas apenas permite numeros e contem duas setas para aumentar o subir o valor
+		   "range" cria um slide ao qual é atribuido um limite de valors numericos com min= e max= e qual a variação do slider com step= e o valor predefinido com value=
+		   "checkbox" cria uma caixa de seleção de valor binário (s/n), os checkboxs são cumulativos uns com os outros
+		   "radio" semelhante ao checkbox mas apenas um pode estar selecionado dentro da <section>
+		   "text" list="" gera um campo text com sugestões de auto compleção definidas em <datalist>
+		  <select> que gera um dropdown com opções, definidas dentro de <select></select> com <option>
+		  <datalist> tabem preenchido com <option> vvai atribuir sugestões de compleção a campos <input> com o atributo list=""
+		  <textarea> gera um campo de dimensões personalizaveis com rows="" e cols="" para introdução de texto livre
+		   required - este parametro obriga a que o input seja preenchido antes da submissão
+		   minlenght e max lenght definem um limite de caracteres
+		   pattern obriga a que o input obdeça a um formato especificado
+quando o <form> é submetido a informação é submetida associando o atributo name ao valor introduzido name=value
+      <figure> deve conter 
+	    <img src=""> e apresentar uma imagem que é descrita por 
+		<figcaption>
+	  <audio>, <video> e <embed> devem ser utilizados para apresentar os respetivos conteudos media
+	  <footer> deve contem informação complementar da pagina, como links externos, direitos de autor, about.me, etc.
+	  
+
+

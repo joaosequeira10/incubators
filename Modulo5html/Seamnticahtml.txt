@@ -49,5 +49,7 @@ De acordo com a semântica os seguintes tags devem conter o sequente conteúdo:
 			<audio autoplay controls>
         	       	  <source src="https://content.codecademy.com/courses/SemanticHTML/dogBarking.mp3" type="audio/mp3">
       			</audio>
-	- (por acabar -- ver website de exemplo)
+	- tal como o audio tambem se deve ajustar o elemento de acordo com o tipo de media nele inserido, por exemplo <video> ou <embed>
+
+para se ver um exemplo prático basta correr o website exemplo.html inserido nesta pasta
 	
