@@ -1,0 +1,96 @@
+
+*{ /* O elemento * refere a todos os elementos, pode ser utilizado para alterar regras visuais globalmente*/
+}
+body { /* body refere ao elemnto <body> do ficheiro html */
+  /* Old browsers */
+  background: #141E30; /*background altera a cor do fundo, no outros comandos abaixo é aplicado um gradiente de cores com 45º, apenas são compativeis com versões mais recentes de browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(-45deg, #35577D, #141E30); /* as cores pode ser representadas de varias maneiras, por exemplo: white = #FFF =FFFFFF ou mesmo rgb(255, 255, 255)
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(-45deg, #35577D, #141E30);
+  margin: 0; /* margin refere a distancia a que o conteudo dentro de <body> fica da sua margem */
+  padding: 0; /* padding refere a distância a que a margem de <body> fica do conteudo de onde este está encapsulado*/
+}
+
+h1 {
+  color: #FFF !important; /* color altera a cor da fonte em <h1> o !important altera a prioridade da regra para maxima*/
+  font-size: 2em; /*font-size altera o tamanho da fonte em <h1> */
+  padding-top: 100px; /* tal como padding mas apenas aplicado ao topo do elemento <h1> */
+  width: 100%; /* sobrpõe-se a padding e permite establecer um valor fixo ao relativo para  largura de um elemento */
+  font-family: Georgia; /* especifica o tipo principal de font*/
+  text-align: center; /* alinha o texto, pode ser center, left, right, justify, initial ( valor default) ou inherit (o mesmo do elemento pai) */ 
+}
+
+h2 {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5); /* adiciona uma borda por baixo do elemento, neste caso com 1 pixel de largura, solida, branca com 50% transparencia*/
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: 100; /* define a espessura da letra pode tambem ser definido com bold, thin ,heavy, ou normal *//
+  font-size: 22px;
+  line-height: 24px; /* causa um afastamento das linhas de borda( visiveis ou não), neste caso é visivel na borda definada em border bottom */
+  padding-bottom: 30px; /* tal como padding-top mas para a parte de baixo do elemento */
+  text-align: left;
+  width: 70%;
+  font-family: Georgia;
+}
+
+p {
+  color: aliceblue;
+  line-height: 1.3em;
+  text-align: left;
+  width: 100%;
+  font-family: Helvetica;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.byline { /* quando a definição começa com um . esta e aplicada a classes, por exemplo <example class=""byline"> */
+  font-family: Helvetica;
+  color: rgba(255, 255, 255, 0.5);
+  float: left; /* faz com que o elemente se coloque a esquerda do seu container */
+  font-size: 14px;
+  padding-left: 10px;
+  text-transform: uppercase; /* transforma todo o texto do elemento em maiusculas */
+}
+
+.caption {
+  display: block; /* faz com que o elemento seja tratado como um bloco e não como uma linha */
+  font-family: 'Playfair Display', serif;
+  font-size: 14px;
+  font-style: italic;
+  line-height: 14px;
+  margin-left: 20px; /* tal como margin mas apenas aplicado ao lado direito */
+  padding: 10px;
+  position: relative;  /* position define se o elemento tem uma posição absoluta, fixa estatica ou relativa em relaçao ao elemento pai */
+  top: 80%; /* neste caso a posivão e realtiva ao topo */
+  width: 60%;
+  background-color: white; /* define a cor de fundo tal como background em body, mas apenas funciona com cores */
+  color: black;
+}
+
+.content {
+  padding: 40px;
+}
+
+.image {
+  background-image: url('https://content.codecademy.com/courses/freelance-1/unit-2/soccer.jpeg'); /* define uma imagem de fundo */
+  background-size: cover; /* define o tamanho da imagem de fundo, neste caso para cobrir todo o elemento*/
+  background-position: center; /* ajusta a imagem ao centro */
+  height: 300px; /* tal com widht mas na vertical */
+}
+
+.writer-img {
+  -webkit-box-shadow: 5px 0px 5px 0px rgba(0, 0, 50, 0.97); /* não foi explica */
+  -moz-box-shadow: 5px 0px 5px 0px rgba(0, 0, 50, 0.97); /* não foi explicadp */
+  box-shadow: 5px 0px 5px 0px rgba(0, 0, 50, 0.97);
+  float: left;
+  width: 50px;
+}
+
+exemplo.exemplo{ /* seria aplicado a um elemento <exemplo class="exemplo" */
+
+}
+
+#exemplo{ /* seria aplicado a um objecto com id="exemplo"*/
+}
+exemplo#exemplo{
+}
