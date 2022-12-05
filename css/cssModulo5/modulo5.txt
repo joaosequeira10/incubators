@@ -1,0 +1,6 @@
+* {
+width: 200px;
+height: 300px;
+margin: 10px;
+box-sizing: border-box; /* mantem as dimenções da box dentro dos valores definidos em width e height, sem que a margin se adicione a eles, sendo aplicada "para dentro" da caixa do elemento */
+}
