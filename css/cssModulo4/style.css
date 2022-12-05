@@ -1,0 +1,124 @@
+body {
+  background-color: white;
+  font-family: 'Raleway', sans-serif;
+  margin: 0; /* o facto de igualar a 0 reinicia os valors do css por defeito, para evitar a formatação automatica do user agent (web browser */
+  padding: 0;
+}
+
+.navigation ul { /*aplica-se a lista não ordenada dentro do elemnto com a class="navigation" */
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.navigation li { /* aplica aos itens listados dentro da clas="navigation */
+  font-weight: 100;
+  letter-spacing: 2px; /* define o espaçamento das letras */
+  padding: 20px;
+}
+
+.navigation  li.logo {
+  color: black;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 4px;
+}
+
+.donate{
+  visibility: hidden; /* define a visibilidade do elemento, pode ser hidden visible ou collapse */
+}
+
+#banner {
+  background-image: url("https://content.codecademy.com/courses/web-101/unit-6/htmlcss1-img_tahoe.jpeg"); /* define uma imagem de fundo baseada num link na internet ou local */
+  background-size: cover;
+  background-position: bottom center;
+  height: 700px;
+  width: 100%;
+}
+
+#banner .content h1 { /* aplica-se aos elementos 1 dentro de elemntos com id="banner" e class="content */
+  border: 3px solid white;
+  position: relative;
+  top: 50px; /* apenas afeta elementos posicionados, refere um alinhamento ao topo afastado 50 px do ancestral mais proximo */
+  width: 400px;
+  margin: 0 auto;
+}
+
+#main {
+  margin: 0 auto;
+  padding: 40px;
+  text-align: center;
+  width: 400px;
+  height: 1000px;
+  overflow: scroll; /* define como se lida quando um elemento é maior que o seu elemento pai, neste caso cria uma barra de scroll */
+}
+
+h1 {
+  color: white;
+  font-size: 42px;
+  font-weight: 600;
+  text-align: center;
+}
+
+h2 {
+  border: 1px dotted red;
+  color: red;
+  font-size: 14px;
+  line-height: 48px;
+  padding: 20px 30px;
+  margin: 30px 20px;
+  text-align: center;
+}
+
+h3 {
+  color: red;
+  font-size: 26px;
+  font-weight: 700;
+  padding: 20px 10px;
+}
+
+p {
+  color: grey;
+  font-size: 16px;
+  line-height: 48px;
+  margin-top: 60px;
+  padding: 10px 20px;
+}
+
+.pull-quote {
+  margin: 0 auto;
+  width: 400px;
+}
+
+.byline {
+  border-bottom: 1px solid LightGrey;
+  border-top: 1px solid LightGrey;
+  color: DarkGrey;
+  font-size: 14px;
+  font-weight: 200;
+}
+
+.share {
+  border: 1px solid LightGrey;
+  padding: 40px 0px;
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+
+.share a {
+  background: red;
+  border: 1px solid red;
+  border-radius: 3px;
+  color: white;
+  display: inline-block;
+  margin: 10px;
+  padding: 14px;
+  text-decoration: none;
+}
+
+.share a:hover { /* esta regra apenas se aplica quando o elemento é sobreposicionado com o rato */
+  background: white;
+  border: 1px solid red;
+  color: red;
+}
