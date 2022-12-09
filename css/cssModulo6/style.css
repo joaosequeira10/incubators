@@ -1,0 +1,118 @@
+/*neste modulo aprendeu-se sobre o layout do website e da sua relação com o csss */
+
+
+body { 
+  background-color: #FFF;
+  margin: 0 auto;
+}
+
+header {
+  background-color: #466995;
+  border-bottom: 1px solid #466995;
+  position: fixed; /* a regra position define o tipo de posição do elemento, neste caso, fixed vai manter o elemento sempre visivel e na mesma posição */
+  width: 100%;
+  z-index: 10; /* z-index define a "3ª dimensão" do website, em caso de sobreposição de elementos no website, o z-index define a prioridade da sobreposição do elemento, quandto maior, mais para frente */
+}
+
+ul {
+  margin: 30px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+li {
+  color: #FFF;
+  font-family: 'Oswald', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  text-transform: uppercase;
+  display: inline-block; /* display refere como o elemento interage com o restant contudo, inline - fica siguido com o texto e não pode ser personalizado em altura ou largura, block cria um bloco com az largura do elemento e altura manualmente ajustavel, e inline-block podem ter altur e largura personalizada e aparecer tambem na mesma linha*/ 
+  width: 80px;  
+}
+
+li:hover {
+  color: #DBE9EE;
+}
+
+h1 {
+  color: #466995;
+  font-family: 'Oswald', sans-serif;
+  font-size: 32px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+h2 {
+  color: #333;
+  font-family: 'Varela Round', sans-serif;
+  font-size: 26px;
+  font-weight: 100;
+  margin: 0 auto 20px auto;
+}
+
+h3 {
+  color: #466995;
+  font-family: 'Oswald', sans-serif;
+  font-size: 18px;
+  text-align: center;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 30px;
+}
+
+h4 {
+  color: #466995;
+  font-family: 'Oswald', sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-align: center;
+  text-transform: uppercase
+}
+
+p {
+  color: #333;
+  font-family: 'Varela Round', sans-serif;
+  font-size: 18px;
+}
+
+footer {
+  background-color: #DBE9EE;
+  text-align: center;
+  height: 100px;
+}
+
+.welcome {
+  background-color: #DBE9EE;
+  box-sizing: border-box;
+  padding: 40px;
+  text-align: center;
+  width: 100%;
+  position: relative;
+  top: 50px;
+}
+
+.question {
+  text-align: center;
+  position: relative; /* position relative mantem a posição fixa no flow do website ou seja, a posição é a mesma em relação a sua posição por defeito no website */
+  top: 40px;
+}
+
+.answer {
+  border: 1px solid #466995;
+  margin: 20px;
+  display: inline-block;
+}
+
+.answer:hover {
+  background: #C0D6DF;
+  color: #FFF;
+}
+
+exemplo { /* apenas para incluir outras regras que não estavam neste .css */
+  position: absolute; /* mantem uma posição fixed relativa ao container pai mais próximo */
+  position: sticky; /*mantem uma posição fixed dentro do parent container */
+  position: static; /* a posição por defeito segue o flow do ficheiro html*/
+  float: left; /* ou right, chega o elemento o mais possivel para a esquerda ou para a direita */
+  clear: left; /* ou right ou both, impede que o elemento fique "justificado" (em linguagem de msword) com outro elemento float */
+}
