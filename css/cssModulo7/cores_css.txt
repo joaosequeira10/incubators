@@ -1,0 +1,10 @@
+Neste modulo falou-se das cores em css;
+  as cores podem ser representadas de 4 maneiras:
+  pelo nome, em inglês, como blue, red, green, yellow, midnightblue , etc
+  pelo seu valor hexadecimal, por exemplo: #000000 representa preto, #FF0000 vermelho, #000000 brancon, etc.
+  pelo seu valor rgb decimal: rgb(0, 0, 0) - preto, rgb (255, 255, 000) - amarelo
+  pelo valor hsl (hu saturation lightness): hsl(0, 100%, 50%) - vermelho, hsl(120 ,100%, 50%) - verde...
+Pode ainda ser acrescentada transparencia (alpha) as cores designadas por valor, por exemplo:
+  #ffff007f  - ao acrescentar um byte hex defini-se o alpha, neste caso temos amarelo meio transparante;
+  rgba(255, 255, 0 , 0.5) - tanto em rgbcom em hsl adiciona-se um "a" e um valor de 0 a 1, onde 0 é invisivel e 1 é opaco, neste caso temos outra vez amarelo meio transparente
+  hsla(60 ,100%, 50% , 0.5) - amarelo meio transparente;

@@ -1,0 +1,146 @@
+/* Neste modulo foi introduzido o conceito de fonts e formatação de texto*/
+@font-face { /* este rule set é utilizado para definir uma fonte local, com um nome personalizado, atribuindo-se o caminho local para estas fonts*/
+  font-family: 'GlegooBanner'; /* nome personalizado */
+  src: url('../fonts/Glegoo-Regular.woff2') format('woff2'), /* localização da fonte no formato woff2, o mais atual */
+       url('../fonts/Glegoo-Regular.woff') format('woff'),
+       url('../fonts/Glegoo-Regular.ttf') format('truetype') /* localização da fonte no formato truetype, o mais compativel */
+}
+
+/* Universal Styles */
+html {
+  font-size: 16px;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background-color: #F2F2F2;  
+  text-align: center;  
+}
+
+h1 {
+  padding: 20px;
+  color: white; /*atribui a cor da font */
+  font-size: 28px; /* atribui o tamanho da font*/
+  text-align: center; /*alinha o texto, a left, right, center ou justify */
+  font-family: Georgia; /* define uma fonte para o elemento pelo nome, fonts dadas pelo nome devem ser web safe fonts, ou fontes universalmente compativeis */
+  text-transform: uppercase; /* coloca todas as letras em maiusculas, lowercase faria o mesmo mas para minusculas */
+  letter-spacing: 0.3em; /* define o espaçamento entre letras, pode ser dado em px ou em, px sendo um valor absoluto em pixeis e em um valor relativo ao tamanho da letra */
+}
+
+h2 {
+  padding: 40px 20px 0 20px;
+  font-size: 24px;
+  text-align: center;
+}
+
+a {
+  text-decoration: none; /* permite definir uma decoração do texto como, underline, line-through, overline ou underline, ou uma combinação dos 3 */
+}
+
+p {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: justify;
+}
+
+
+/* Header */
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 20px 0;
+  background-color: #fff;
+  font-size: 14px;
+  font-weight: 900; /* define a espeçura da font, pode ser normal, bold, bolder, lighter ou um valor de 0 a 1000 onde 0 é lighter e 1000 é bolder */
+}
+
+.header li {
+  display: inline-block;
+  padding: 10px;
+}
+
+.header a {
+  color: #4A4A4A;
+}
+
+a.home {
+  color: #4D00FF;
+}
+
+
+/* Banner Section */
+.banner {
+  margin-top: 74px;
+  padding: 40px 0 100px 0;
+  background-color: #4D00FF;
+}
+
+.banner p {
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  color: #ffffff;
+  font-weight: lighter;
+  word-spacing: 0.25em; /* define o espaçamento entre palavras, pode ser atribuido em px ou em */
+  line-height: 1.4; /* define a altura da linha de texto, pode ser atribuido em px, em ou num numero simples, o numero simples funciona em relação ao tamanho normal da linha */
+  font-family: 'GlegooBanner';
+  font-size: 20px;
+}
+
+
+/* Editorial Sections */
+.editorial {
+  padding-bottom: 40px;
+  color: #717171;
+  font-family: 'Trebuchet MS', 'Times New Roman', serif; /* varios valores de fontes, atribuiem fontes fallback, que são aplicadas, por ordem de apresentação caso a primeira não seja compativel, o valor serif, sans, mono ou script, vai atribuir a primeira font disponivel dentro dessa categoria, neste caso serif */
+}
+
+/* Font Card Sections */
+.font-card {
+  padding: 10px 0 40px 0;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.font-card .creator {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-style: italic; /* utilizado para atribuir italic ao texto, se omitido o valor é normal */
+}
+
+.sample {
+  display: inline-block;  
+  padding: 5px 40px;
+}
+
+.sample .text {
+  color: #4D00FF;
+  font-size: 100px;
+}
+
+.garamond {
+  font-family: Garamond;
+}
+
+.helvetica {
+  font-family: Helvetica;
+}
+
+.space {
+  font-family: 'Space Mono', monospace;
+}
+
+.bold {
+  font-weight: 900;
+}
+
+.regular {
+  font-weight: normal;
+}
+
+.italic {
+  font-weight: normal;
+  font-style: italic;
+}
+
