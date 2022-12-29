@@ -1,3 +1,6 @@
+/* this exercise is a solution to the problem presented in https://www.codecademy.com/courses/introduction-to-javascript/projects/dog-years-javascript.
+Instead of following step 10 which is agains code simplicity, I chose to add an if statement to avoid negative values and a user input.
+*/
 console.clear(); //clears the console before starting
 const prompt = require("prompt-sync")({ sigint: true }); // defines prompt to allow user input
 let myAge = prompt("Insert your age: "); //sets the myAge variable to the user input
