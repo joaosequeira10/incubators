@@ -3,6 +3,7 @@ Instead of following step 10 which is agains code simplicity, I chose to add an 
 */
 console.clear(); //clears the console before starting
 const prompt = require("prompt-sync")({ sigint: true }); // defines prompt to allow user input
+let myName = prompt("Insert your name: ").toLowerCase(); //sets name in lowercase
 let myAge = prompt("Insert your age: "); //sets the myAge variable to the user input
 myAge = Number(myAge); // converts myAge to a number
 let earlyYears = 2; // sets a variable that will be use to calculate the first 2 years
@@ -16,7 +17,7 @@ if(myAge >= 0){ //sets up what will happen when myAge is a number bigger than 0
 	} else { //by exclusion sets what happens when myAge is betwwen 0 and 2
 		myAgeInDogYears = myAge * 10.5; // since the age is less than 2 we treat my age as they were the early Years
 	}
-	console.log(`Your age is ${myAgeInDogYears} dog years.`); //prints to the terminal myAgeInDogYears from whatever path it took
+	console.log(`My name is ${myName}. I am ${myAge} years old in human years which is ${myAgeInDogYears} years old in dog years.`); //prints to the terminal the variables and myAgeInDogYears from whatever path it took
 } else { //serves as an exception handler when myAge is lower than 0 or is not a number
 	console.log("Invalid age"); //generic error message
 }
